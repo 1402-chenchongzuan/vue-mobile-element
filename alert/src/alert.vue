@@ -2,7 +2,7 @@
   <div @click.stop @touchmove.prevent
        class="alert"
        v-if="showFlag">
-    <div class="alert-container zh-center">
+    <div class="alert-container">
       <span class="content" v-text="content"></span>
       <div class="button-box">
         <span class="button" @click="confirm" v-text="confirmBtnText"></span>
@@ -67,6 +67,10 @@
     right: 0;
     background: $color-background-cover;
     .alert-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) !important;
       @include px2rem(width, 563);
       @include px2rem(height, 254);
       background: #fff;

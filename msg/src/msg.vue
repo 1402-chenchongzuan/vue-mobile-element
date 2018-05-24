@@ -1,5 +1,5 @@
 <template>
-  <div class="msg zh-center"
+  <div class="msg"
        v-if="showFlag"
        v-text="content"></div>
 </template>
@@ -47,6 +47,9 @@
   .msg {
     z-index:9999;
     position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
     display: flex;
     justify-content: center;
     align-items: center;
