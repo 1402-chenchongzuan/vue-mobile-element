@@ -25,7 +25,7 @@ npm install vue-mobile-element --save
 
 ### 引入
 ```
-import {Alert,Loading,Msg} from 'vue-mobile-element';
+ import {Alert,Loading,Msg} from 'vue-mobile-element';
  Vue.use(Loading);
  Vue.prototype.$alert=Alert;
  Vue.prototype.$loading=Loading.service;
@@ -66,7 +66,7 @@ this.$alert('该操作会删除信息',['确定','取消']).then(()=>{  //有确
 
 ```
 this.$msg.setShow(text,time);  //会自动关闭Msg,text必须填写,time为Msg显示的时间，默认1500毫秒
- this.$msg.show(text);     //不会自动关闭Msg，除非显示调用hide
- this.$msg.hide();         //关闭Msg
+this.$msg.show(text);     //不会自动关闭Msg，除非显示调用hide
+this.$msg.hide();         //关闭Msg
 ```
 
